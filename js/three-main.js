@@ -41,7 +41,7 @@ window.addEventListener('pointermove', function (event) {
 var clock = new THREE.Clock();
 var time = 0.0;
 var frame = 0;
-var triangleTexture = new THREE.TextureLoader().load('../images/triangle.png');
+var triangleTexture = new THREE.TextureLoader().load('images/triangle.png');
 triangleTexture.colorSpace = THREE.SRGBColorSpace;
 triangleTexture.wrapS = triangleTexture.wrapT = THREE.RepeatWrapping;
 var triangleAnimationLength = 50;
@@ -60,4 +60,5 @@ scene.add(planeMesh);
 // const scenePassColor = scenePass.getTextureNode('output');
 // const bloomPass = bloom(scenePassColor);
 // postPro.outputNode = scenePassColor.add(bloomPass);
+
 
